@@ -1,8 +1,8 @@
-# README Crawler
+# README Crawler (npm package)
 
 [![version](https://img.shields.io/npm/v/readme-crawler.svg?style=flat-square)](http://npm.im/readme-crawler)
 [![downloads](https://img.shields.io/npm/dm/readme-crawler.svg?style=flat-square)](http://npm-stat.com/charts.html?package=readme-crawler&from=2015-08-01)
-[![MIT License](https://img.shields.io/npm/l/starwars-names.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+[![MIT License](https://img.shields.io/npm/l/readme-crawler.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
 A Node.js webcrawler to navigate README links.
 
@@ -13,7 +13,7 @@ Download default README files from a GitHub repository [URL](https://github.com/
 
 ## Usage
 Create a new crawler instance and pass in a configuration object. Call the ```run``` method to download the README at the given URL.
-```
+```js
   import readMeCrawler from 'readme-crawler';
 
   var crawler = new readMeCrawler({
