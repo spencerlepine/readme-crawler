@@ -25,7 +25,7 @@ Create a new crawler instance and pass in a configuration object. Call the ```ru
 
 | Name              | Type     | Description                                                    |
 | ---------------   | -------- | ---------------------------------------------------------------|
-| startUrl          | `string` | GitHub repository URL formated 'https://github.com/user/repo   |
+| startUrl          | `string` | GitHub repository URL formated 'https://github.com/user/repo'   |
 | followReadMeLinks | `boolean` | Override or extend the styles applied to the component.       |
 | outputFolderPath  | `string` | Folder in for README downloads starting in project root        |
 
