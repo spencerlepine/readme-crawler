@@ -1,0 +1,50 @@
+{
+  "name": "readme-crawler",
+  "version": "1.0.3",
+  "description": "Download README files from GitHub repository links",
+  "homepage": "https://github.com/spencerlepine/readme-crawler#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spencerlepine/readme-crawler"
+  },
+  "main": "index.js",
+  "type": "module",
+  "keywords": [
+    "node",
+    "github",
+    "readme",
+    "webcrawler",
+    "javascript",
+    "crawler",
+    "scraper",
+    "nodejs",
+    "web-crawler"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix"
+    ]
+  },
+  "author": {
+    "name": "Spencer Lepine",
+    "email": "hello@spencerlepine.com",
+    "url": "https://spencerlepine.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "jsdom": "^17.0.0",
+    "node-fetch": "^2.6.1",
+    "parse-github-url": "^1.0.2",
+    "turndown": "^7.1.1",
+    "yaspeller": "^7.0.0"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  }
+}
