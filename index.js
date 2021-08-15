@@ -10,7 +10,7 @@ import fs from "fs";
 /___/_/  /___/_/|_/\___/___/_/|_| /____/___/_/  /___/_/|_/___/
 */
 
-class readmeCrawler {
+class ReadMeCrawler {
   constructor({ startUrl, followReadMeLinks, outputFolderPath }) {
     this.outputFolderPath = outputFolderPath;
     this.startUrl = startUrl;
@@ -62,4 +62,4 @@ class readmeCrawler {
   }
 }
 
-export default readmeCrawler;
+export default ReadMeCrawler;
