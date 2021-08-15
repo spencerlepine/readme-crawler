@@ -14,9 +14,9 @@ Download default README files from a GitHub repository [URL](https://github.com/
 ## Usage
 Create a new crawler instance and pass in a configuration object. Call the ```run``` method to download the README at the given URL.
 ```js
-  import readMeCrawler from 'readme-crawler';
+  import ReadMeCrawler from 'readme-crawler';
 
-  var crawler = new readMeCrawler({
+  var crawler = new ReadMeCrawler({
     startUrl: 'https://github.com/jnv/lists',
     followReadMeLinks: true,
     outputFolderPath: './output/'
