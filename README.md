@@ -4,7 +4,7 @@
 [![downloads](https://img.shields.io/npm/dm/readme-crawler.svg?style=flat-square)](http://npm-stat.com/charts.html?package=readme-crawler&from=2015-08-01)
 [![MIT License](https://img.shields.io/npm/l/readme-crawler.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
-A Node.js webcrawler to navigate README links.
+A Node.js webcrawler to navigate README links. Read more [here](https://spencerlepine.com/blog/building-a-readme-crawler-with-node.js).
 
 Download default README files from a GitHub repository [URL](https://github.com/example-user/awesome-project).
 
