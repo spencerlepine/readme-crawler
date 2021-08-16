@@ -4,9 +4,9 @@
 [![downloads](https://img.shields.io/npm/dm/readme-crawler.svg?style=flat-square)](http://npm-stat.com/charts.html?package=readme-crawler&from=2015-08-01)
 [![MIT License](https://img.shields.io/npm/l/readme-crawler.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
-A Node.js webcrawler to navigate README links. Read more [here](https://spencerlepine.com/blog/building-a-readme-crawler-with-node-js).
+A Node.js webcrawler to download README files and recursively follow contained GitHub repository links. Read more [here](https://spencerlepine.com/blog/building-a-readme-crawler-with-node-js).
 
-Download default README files from a GitHub repository [URL](https://github.com/example-user/awesome-project).
+Fetch the default README files display at a GitHub repository [URL](https://github.com/example-user/awesome-project).
 
 ## Installation
 ```npm install --save readme-crawler```
@@ -21,16 +21,23 @@ Create a new crawler instance and pass in a configuration object. Call the ```ru
     followReadMeLinks: true,
     outputFolderPath: './output/'
   });
-
+  
+  // -> fetch https://github.com/jnv/lists
+  // -> download README in project root directory 
+  // -> export to new folder in root/output/repositories
+  // -> generate list of other repository links
+  // -> repeat steps on each link
   crawler.run();
 ```
 
 ### Configuration Properties
 
-| Name              | Type     | Description                                                    |
-| ---------------   | -------- | ---------------------------------------------------------------|
-| startUrl          | `string` | GitHub repository URL formated 'https://github.com/user/repo'  |
-| followReadMeLinks | `boolean` | Override or extend the styles applied to the component.       |
-| outputFolderPath  | `string` | Folder in for README downloads starting in project root        |
+| Name              | Type      | Description                                                    |
+| ---------------   | --------- | ---------------------------------------------------------------|
+| startUrl          | `string`  | GitHub repository URL formated 'https://github.com/user/repo'  |
+| followReadMeLinks | `boolean` | Recursively follow README links and export data at each repo   |
+| outputFolderPath  | `string`  | Folder in for README downloads starting in project root        |
+
+---
 
 > [spencerlepine.com](https://www.spencerlepine.com) &nbsp;&middot;&nbsp; GitHub [@spencerlepine](https://github.com/spencerlepine) &nbsp;&middot;&nbsp; Twitter [@spencerlepine](http://twitter.com/spencerlepine)
