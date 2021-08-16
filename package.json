@@ -1,6 +1,6 @@
 {
   "name": "readme-crawler",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Download README files from GitHub repository links",
   "homepage": "https://github.com/spencerlepine/readme-crawler#readme",
   "repository": {

@@ -21,9 +21,9 @@ Create a new crawler instance and pass in a configuration object. Call the ```ru
     followReadMeLinks: true,
     outputFolderPath: './output/'
   });
-  
+
   // -> fetch https://github.com/jnv/lists
-  // -> download README in project root directory 
+  // -> download README in project root directory
   // -> export to new folder in root/output/repositories
   // -> generate list of other repository links
   // -> repeat steps on each link
@@ -37,6 +37,14 @@ Create a new crawler instance and pass in a configuration object. Call the ```ru
 | startUrl          | `string`  | GitHub repository URL formated 'https://github.com/user/repo'  |
 | followReadMeLinks | `boolean` | Recursively follow README links and export data at each repo   |
 | outputFolderPath  | `string`  | Folder in for README downloads starting in project root        |
+
+---
+
+## Crawler Error
+
+***Issue:*** each repo link will be written to a file named ```linkQueue.txt```. There could be issues writing to this file asynchronously while the crawler is activated.
+
+***Solution:*** restart the crawler with ```craweler.run()``` again. The link queue should contain links to use, but the crawler tried to read from the file before the file was finished writing.
 
 ---
 
